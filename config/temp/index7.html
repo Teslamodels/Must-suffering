@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seven</title>
+</head>
+<body>
+    <dev style="text-align: center; font-family: sans-serif; color: cornflowerblue;">
+        <h2>Welcome</h2>
+        <ul>
+            {% for post in object_list %}
+            <li>
+                {{ post.Tesla }}
+                {{ post.GM }}
+                {{ post.Ford }}
+            </li>
+            {% endfor %}
+        </ul>
+    </dev>
+</body>
+</html>

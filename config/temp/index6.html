@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Six</title>
+</head>
+<body>
+    <div style="font-family: sans-serif; text-align: center; color: blue;">
+        <h2>Welcome</h2>
+        <ul>
+            {% for post in object_list %}
+            <li>
+                {{ post.Birthdate }}
+                {{ post.Address }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

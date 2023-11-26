@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Five</title>
+</head>
+<body>
+    <div style="text-align: center; font-family: sans-serif; color: black; ">
+        <h2>Welcome</h2>
+        <ul>
+            {% for post in object_list %}
+            <li>
+                <strong>{{ post.Firstname }}<br></strong>
+                        {{ post.Lastname }}<br>
+                        {{ post.Middlename }}<br>
+                        {{ post.Email }}<br>
+                        {{ post.Password }}<br>
+                        {{ post.Age }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
